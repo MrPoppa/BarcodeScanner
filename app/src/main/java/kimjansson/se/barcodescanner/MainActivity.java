@@ -37,8 +37,10 @@ public class MainActivity extends Activity {
         IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
         if (scanResult != null) {
             String result = scanResult.getContents();
+            scanOutput.setText("");
             scanOutput.setText(result);
         }
+        // Added as test
         // else continue with any other code you need in the method
 
     }
