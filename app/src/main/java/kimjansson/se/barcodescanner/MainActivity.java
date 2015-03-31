@@ -20,6 +20,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         scanOutputWindow = (TextView) findViewById(R.id.scan_output);
+
         // Scanner
         scanButton = (Button) findViewById(R.id.scan_button);
         scanButton.setOnClickListener(new View.OnClickListener() {
